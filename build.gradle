@@ -32,7 +32,6 @@ dependencies {
     testImplementation     'junit:junit:4.13'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
-
 /*runtime {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
     launcher {
