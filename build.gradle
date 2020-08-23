@@ -4,31 +4,21 @@ plugins {
     id 'org.beryx.runtime' version '1.11.2'
 }
 
-
 group = 'org.openjfx'
-
-
 
 repositories {
     mavenCentral()
 }
 
-
-
-
-
-
 javafx {
+    version = "14";
     modules = ['javafx.controls', 'javafx.fxml']
 }
-
+mainClassName = 'org.openjfx.mainpack.Main'
 application {
-    mainClassName = "org.openjfx.mainpack.Launcher"
-    applicationName = 'EncryptionGUI'
+    applicationName = 'CSWDOProject'
 }
 
-
-mainClassName = 'org.openjfx.mainpack.Main'
 jar {
     manifest {
         attributes 'Main-Class': 'org.openjfx.mainpack.Launcher'
@@ -43,7 +33,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-runtime {
+/*runtime {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
     launcher {
         noConsole = true
@@ -54,3 +44,4 @@ runtime {
         }
     }
 }
+*/
